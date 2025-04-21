@@ -1,0 +1,34 @@
+Choose a suitable variable type to store the following information depending on the
+situation and try to explain your reasoning:
+
+1. The age of a person in a form for a database with millions of records.
+	Tipo: unsigned char
+	La edad de una persona es un valor positivo que no supera los 125 años. Ademas al usar 	solo 1 byte (unsigned char) en una base de datos grande,en lugar de int  (4 bytes), se ahorra 3 bytes por registro.
+
+2. The age of a person in days for a program in which we want to add or subtract
+an arbitrary number of days.
+	Tipo: unsigned int
+	Un unsigned int puede almacenar valores hasta aproximadamente 4.2 mil millones, además se necesita realizar operaciones como sumar o restar días y no se necesita valores negativos.
+
+3. A student’s grade.
+	Tipo: float
+	Las calificaciones incluyen decimales y el tipo float es ideal para operaciones como promediar calificaciones.
+
+4. The average amount of rainfall in the month of February.
+	Tipo: float
+	Las mediciones de precipitación incluyen decimales y el tipo float es ideal por que no requiere mucha precisión.
+5. The angle of rotation of a robot surgeon to be broadcast over the internet.
+	Tipo: double
+	En cirugía robótica es importante la precisión por lo que un double es más ideal.
+6. The size of your backyard.
+	Tipo: float
+	Para medidas de un terreno, un float es ideal para representar dimensiones en metros cuadrados.
+7. The number of stars in the universe.
+	Tipo: unsigned long long
+	Existe un número enormemente grande de estrellas, por lo que un unsigned long long es el mayor tipo entero disponible en C.
+8. The balance of your bank account.
+	Tipo: double
+	Requiere precisión para manejar los centavos y el saldo llegar a ser grande.
+9. The position of a particle in a high-resolution game.
+	Tipo: float
+	Las coordenadas espaciales en los juegos son comunmente números decimales y float es ideal para la precisión y rendimiento del juego.
